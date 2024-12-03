@@ -1,0 +1,103 @@
+
+body {
+  background-color: #272219;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-section {
+  background-image: url("./assets/background/background.png"); // Caminho correto para a imagem de fundo
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+
+  .home-card {
+    background-color: rgba(0, 0, 0, 0.7); // Fundo escuro com transparência
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .home-logo {
+    max-width: 150px;
+  }
+
+  .whatsapp-button {
+    background-color: #25d366; // Cor do WhatsApp
+    border: none;
+
+    &:hover {
+      background-color: #1ebe5f;
+    }
+  }
+}
+
+.about-section,
+.contact-section {
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+
+  .about-card,
+  .contact-card {
+    border: none;
+    border-radius: 8px;
+  }
+
+  h1,
+  .card-title {
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  margin-top: auto;
+  background-color: #343a40;
+  color: #fff;
+
+  a {
+    color: #ccc;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section,
+  .about-section,
+  .contact-section {
+    height: auto; // Ajusta a altura para auto em dispositivos móveis
+    padding: 40px 20px; // Adiciona um padding para melhor espaçamento em telas pequenas
+  }
+
+  .home-card,
+  .about-card,
+  .contact-card {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .home-logo {
+    max-width: 100px; // Reduz o tamanho do logo para telas menores
+  }
+
+  h1,
+  .card-title {
+    font-size: 1.5rem; // Diminui o tamanho da fonte para melhor encaixe na tela
+  }
+
+  .whatsapp-button {
+    width: 100%; // Botão ocupa toda a largura do card em dispositivos móveis
+  }
+}
