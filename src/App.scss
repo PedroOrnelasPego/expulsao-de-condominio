@@ -1,14 +1,14 @@
 // App.scss
 
 .home-section {
-  background-image: url("./assets/background/background.png");
+  background-image: url("./assets/background/home-background.png");
   background-size: cover; // Ajusta para cobrir toda a seção
   background-position: center; // Centraliza a imagem
   background-repeat: no-repeat; // Evita repetição
   height: 100vh;
   padding: 2rem; // Adiciona espaçamento interno para melhor responsividade
 
-  .home{
+  .home {
     background-color: #2f2f24e5;
     color: #e7e4e4;
     padding: 40px;

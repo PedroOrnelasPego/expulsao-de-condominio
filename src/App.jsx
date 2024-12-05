@@ -4,8 +4,11 @@ import Container from "react-bootstrap/Container";
 import Menubar from "./components/Menubar";
 import { Card, Button } from "react-bootstrap";
 import logo from "./assets/background/logo.png";
-import dois from "./assets/background/2.jpg";
-import tres from "./assets/background/3.jpg";
+import aboutImg from "./assets/background/about-img.jpg";
+import actionsImg from "./assets/background/actions-img.jpg";
+import identifyImg from "./assets/background/identify-img.jpg";
+import importantImg from "./assets/background/important-img.jpg";
+import contactImg from "./assets/background/contact-img.png";
 
 function App() {
   return (
@@ -48,7 +51,7 @@ function App() {
         {/* Imagem */}
         <div className="w-full md:w-1/2 h-screen">
           <img
-            src={dois}
+            src={aboutImg}
             alt="Edifícios modernos"
             className="w-full h-full object-cover"
           />
@@ -84,14 +87,14 @@ function App() {
         </div>
       </section>
 
-      <section id="contact" className="flex flex-col md:flex-row bg-[#272219]">
+      <section id="actions" className="flex flex-col md:flex-row bg-[#272219]">
         {/* Texto */}
         <div className="w-full md:w-1/2 px-8 md:px-12 flex items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               O que fazer diante de um condômino antissocial no seu condomínio?
             </h2>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-4">
+            <p className="text-lg md:text-xl text-white leading-relaxed mb-6">
               A legislação, juntamente com a Convenção do Condomínio e o
               Regulamento Interno, prevê uma série de penalidades para lidar com
               condôminos que apresentem comportamentos antissociais. Essas
@@ -99,23 +102,69 @@ function App() {
               restaurar o sossego e a harmonia no condomínio. Veja o passo a
               passo:
             </p>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-4">
-              <strong>1- Notificação extrajudicial:</strong>
-              <br />O condômino infrator deve ser notificado por escrito com uma
-              advertência clara sobre sua infração. É importante conceder prazo
-              e oportunidade para que ele apresente sua defesa, encaminhando o
-              documento ao(a) síndico(a), sub-síndico(a) e ao conselho do
-              condomínio.
-            </p>
+
+            {/* Tópicos 1 e 2 */}
+            <div className="flex flex-col md:flex-row md:gap-8 mb-1">
+              <div className="flex-1">
+                <p className="text-base md:text-lg text-white leading-relaxed mb-4">
+                  <strong>1- Notificação extrajudicial:</strong>
+                  <br />O condômino infrator deve ser notificado por escrito com
+                  uma advertência clara sobre sua infração. É importante
+                  conceder prazo e oportunidade para que ele apresente sua
+                  defesa, encaminhando o documento ao(a) síndico(a),
+                  sub-síndico(a) e ao conselho do condomínio.
+                </p>
+              </div>
+              <div className="flex-1">
+                <p className="text-base md:text-lg text-white leading-relaxed mb-4">
+                  <strong>2- Aplicação de multa inicial:</strong>
+                  <br />
+                  Caso a advertência não surta efeito, o(a) síndico(a) poderá
+                  aplicar uma multa com base na convenção ou no regimento
+                  interno do condomínio. Na ausência de regras específicas,
+                  aplica-se o disposto no artigo 1.336, § 2º, do Código Civil,
+                  que permite uma multa de até cinco vezes o valor da taxa
+                  condominial para a infração cometida.
+                </p>
+              </div>
+            </div>
+
+            {/* Tópicos 3 e 4 */}
+            <div className="flex flex-col md:flex-row md:gap-8 mb-1">
+              <div className="flex-1">
+                <p className="text-base md:text-lg text-white leading-relaxed mb-4">
+                  <strong>3- Assembleia para agravamento da multa:</strong>
+                  <br />
+                  Persistindo o comportamento inadequado, deve ser convocada uma
+                  assembleia geral extraordinária. Nesse encontro, será votada a
+                  aplicação de uma multa agravada, conforme o artigo 1.337 do
+                  Código Civil, podendo chegar a até cinco vezes o valor do
+                  condomínio. O infrator terá direito de apresentar sua defesa
+                  antes da deliberação dos condôminos, sendo necessária a
+                  aprovação de 3/4 dos condôminos restantes para validar a
+                  penalidade.
+                </p>
+              </div>
+              <div className="flex-1">
+                <p className="text-base md:text-lg text-white leading-relaxed mb-4">
+                  <strong>
+                    4- Nova assembleia para aplicação de penalidade máxima:
+                  </strong>
+                  <br />
+                  Em caso de reincidência, convoca-se outra assembleia geral
+                  extraordinária, onde os condôminos podem decidir pela
+                  aplicação de uma multa de até dez vezes o valor do condomínio,
+                  conforme o artigo 1.337 do Código Civil. Novamente, o infrator
+                  deverá ter a oportunidade de se defender, e a deliberação
+                  seguirá o quórum qualificado de 3/4 dos condôminos restantes.
+                </p>
+              </div>
+            </div>
+
             <p className="text-lg md:text-xl text-white leading-relaxed">
-              <strong>2- Aplicação de multa inicial:</strong>
-              <br />
-              Caso a advertência não surta efeito, o(a) síndico(a) poderá
-              aplicar uma multa com base na convenção ou no regimento interno do
-              condomínio. Na ausência de regras específicas, aplica-se o
-              disposto no artigo 1.336, § 2º, do Código Civil, que permite uma
-              multa de até cinco vezes o valor da taxa condominial para a
-              infração cometida.
+              Esse processo garante que as ações tomadas estejam em conformidade
+              com a legislação e respeitem o direito de defesa, ao mesmo tempo
+              em que protege o bem-estar coletivo no condomínio.
             </p>
           </div>
         </div>
@@ -123,17 +172,245 @@ function App() {
         {/* Imagem */}
         <div className="w-full md:w-1/2 h-screen">
           <img
-            src={tres}
+            src={actionsImg}
             alt="Condomínio"
             className="w-full h-full object-cover"
           />
         </div>
       </section>
 
+      <section id="identify" className="flex flex-col md:flex-row bg-[#272219]">
+        {/* Imagem */}
+        <div className="w-full md:w-1/2 h-screen">
+          <img
+            src={identifyImg}
+            alt="Condomínio"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Texto */}
+        <div className="w-full md:w-1/2 px-8 md:px-12 flex items-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Como identificar um condômino antissocial?
+            </h2>
+            <p className="text-lg md:text-xl text-white leading-relaxed mb-6">
+              Um condômino antissocial é aquele que, de forma reiterada,
+              desrespeita normas, leis e comete atos graves, muitas vezes
+              configurados como crimes. É importante destacar que não basta ser
+              alguém com quem você tem desavenças pessoais; é necessário que
+              suas condutas causem prejuízo significativo à convivência no
+              condomínio, gerando reclamações, registros de ocorrência policial
+              ou situações graves.
+            </p>
+            <p className="text-lg md:text-xl text-white leading-relaxed mb-6">
+              Alguns exemplos de comportamentos antissociais incluem:
+            </p>
+            <ul className="list-disc text-lg md:text-xl text-white pl-6">
+              <li className="mb-4">
+                <strong>Agressividade verbal ou física:</strong> Xingamentos,
+                assédio moral, agressões físicas, perseguição ou stalking contra
+                síndico(a), moradores ou funcionários.
+              </li>
+              <li className="mb-4">
+                <strong>Desrespeito às regras de ruído:</strong> Persistência em
+                ultrapassar os limites de horário para barulhos, como festas ou
+                música alta, especialmente à noite.
+              </li>
+              <li className="mb-4">
+                <strong>Atentados ao pudor:</strong> Atitudes como andar nu ou
+                seminu pelas áreas comuns do edifício.
+              </li>
+              <li>
+                <strong>Uso inadequado do imóvel:</strong> Realização de
+                atividades profissionais nocivas ou impróprias em unidades
+                residenciais.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="important"
+        className="flex flex-col md:flex-row bg-[#272219]"
+      >
+        {/* Texto */}
+        <div className="w-full md:w-1/2 px-8 md:px-12 flex items-center">
+          <div>
+            <ul className="list-disc text-lg md:text-xl text-white pl-6">
+              <li className="mb-4">
+                <strong>Agressividade verbal ou física:</strong> Xingamentos,
+                assédio moral, agressões físicas, perseguição ou stalking contra
+                síndico(a), moradores ou funcionários.
+              </li>
+              <li className="mb-4">
+                <strong>Desrespeito às regras de ruído:</strong> Persistência em
+                ultrapassar os limites de horário para barulhos, como festas ou
+                música alta, especialmente à noite.
+              </li>
+              <li className="mb-4">
+                <strong>Atentados ao pudor:</strong> Atitudes como andar nu ou
+                seminu pelas áreas comuns do edifício.
+              </li>
+              <li>
+                <strong>Uso inadequado do imóvel:</strong> Realização de
+                atividades profissionais nocivas ou impróprias em unidades
+                residenciais.
+              </li>
+            </ul>
+            <p className="text-lg md:text-xl text-white leading-relaxed mt-6">
+              Identificar esses comportamentos é o primeiro passo para tomar
+              medidas cabíveis, sempre com base na legislação e no regimento
+              interno do condomínio. É fundamental documentar os casos, reunir
+              provas e agir de forma criteriosa para proteger a paz e a
+              segurança da comunidade condominial.
+            </p>
+          </div>
+        </div>
+
+        {/* Imagem */}
+        <div className="w-full md:w-1/2 h-screen">
+          <img
+            src={importantImg}
+            alt="Condomínio"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </section>
+
+      <section
+        id="centralized"
+        className="flex flex-col items-center bg-[#1A1A0D] py-12 px-8"
+      >
+        <div className="max-w-7xl text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Principais atuações da Assessoria Jurídica Condominial
+          </h2>
+          <p className="text-lg md:text-xl text-white leading-relaxed mb-6 text-justify">
+            O escritório JOSIMAR BEZERRA & ADVOGADOS ASSOCIADOS possui{" "}
+            <strong>advogados especialistas em Direito Condominial</strong>,
+            atendendo a todas as necessidades de seus clientes de forma
+            personalizada, com ética, excelência e agilidade. Nossa Assessoria
+            contempla as seguintes atividades no âmbito do Direito Condominial:
+          </p>
+          <ul className="list-disc text-lg md:text-xl text-white leading-relaxed pl-6 md:pl-12 text-justify">
+            <li className="mb-4">
+              Assessoria jurídica especializada em condomínios residenciais,
+              comerciais e associação de moradores através da consultoria
+              preventiva ou judicialmente.
+            </li>
+            <li className="mb-4">
+              Acompanhamento de assembleias ordinárias e extraordinárias e de
+              todos os atos inerentes à sua realização, tais como: elaboração de
+              edital de convocação, verificação da validade dos votos e assuntos
+              tratados na reunião, auxílio nas deliberações através de
+              esclarecimentos de dúvidas por advogado especializado em Direito
+              Condominial e nos temas tratados durante a Assembleia.
+            </li>
+            <li className="mb-4 text-justify">
+              Participação em assembleia de instalação.
+            </li>
+            <li className="mb-4 text-justify">
+              Análise de propostas de prestação de serviços e contratos.
+            </li>
+            <li className="mb-4">
+              Análise da Convenção, Regulamento e outras normas relativas ao
+              condomínio, elaboração e envio de advertências, multas e
+              notificações extrajudiciais.
+            </li>
+            <li className="mb-4">
+              Atuação direta na cobrança de unidades inadimplentes na esfera
+              extrajudicial com o departamento especializado, inclusive com
+              plantões para recuperação de crédito permanente e rigorosa
+              cobrança judicial.
+            </li>
+            <li className="mb-4">
+              Elaboração de pareceres jurídicos para consolidação de assuntos
+              polêmicos, tais como: sorteio de vagas de garagem, voto
+              proporcional à fração ideal, responsabilidade do síndico,
+              prestação de contas, direito de voto, responsabilidade do Corpo
+              Direito e condôminos, vizinhança, animais no condomínio, dentre
+              outros assuntos.
+            </li>
+            <li>
+              Representação processual em todas as esferas judiciais,
+              departamento especializado em elaboração de petições iniciais,
+              defesas e recursos, inclusive para Tribunais Superiores.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" className="flex flex-col md:flex-row bg-[#272219]">
+        {/* Imagem */}
+        <div className="w-full md:w-1/2 h-screen">
+          <img
+            src={contactImg}
+            alt="Contato"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Texto */}
+        <div className="w-full md:w-1/2 px-8 md:px-12 flex flex-col justify-center items-start">
+          <div>
+            <img
+              src={logo}
+              alt="Logo Josimar Bezerra & Advogados"
+              className="mx-auto mb-6 w-24 sm:w-32 md:w-40 lg:w-48 h-auto"
+            />
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              JOSIMAR BEZERRA & ADVOGADOS
+            </h2>
+            <h3 className="text-2xl md:text-3xl text-white mb-4">
+              Entre em Contato
+            </h3>
+            <p className="text-lg md:text-xl text-white leading-relaxed mb-4">
+              Rua das Canoas, 757, Betânia, Belo Horizonte/MG, CEP: 30.540-040.
+            </p>
+            <p className="text-lg md:text-xl text-white leading-relaxed mb-4">
+              Avenida Raja Gabáglia n° 1.000, Conj. 805, Cidade Jardim, Belo
+              Horizonte/MG, CEP: 30.441-070.
+            </p>
+            <p className="text-lg md:text-xl text-white leading-relaxed mb-6">
+              De Segunda à Sexta-feira das 8h às 18h.
+            </p>
+            <p className="text-lg md:text-xl text-white leading-relaxed flex items-center mb-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-green-500 mr-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 10l1.39 3.47a2 2 0 001.79 1.26h.09a7 7 0 005.72 5.72v.1a2 2 0 001.25 1.78L14 21l2-8-8-2z"
+                />
+              </svg>
+              (31) 98762-8094
+            </p>
+            <a
+              href="https://wa.me/5531987628094"
+              className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full flex items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fale com Especialista
+            </a>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-dark text-light py-4">
         <Container>
           <p className="text-center">
-            &copy; 2024 Minha Empresa. Todos os direitos reservados.
+            &copy; 2024 Josimar Bezerra & Advogados . Todos os direitos
+            reservados.
           </p>
         </Container>
       </footer>
