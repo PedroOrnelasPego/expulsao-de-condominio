@@ -9,6 +9,7 @@ import actionsImg from "./assets/background/actions-img.jpg";
 import identifyImg from "./assets/background/identify-img.jpg";
 import importantImg from "./assets/background/important-img.jpg";
 import contactImg from "./assets/background/contact-img.png";
+import { FaWhatsapp } from "react-icons/fa";
 
 function App() {
   return (
@@ -25,12 +26,15 @@ function App() {
             JOSIMAR BEZERRA & ADVOGADOS
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-center  mt-4">
-            Direito condominial Expulsão de Condôminos Antissociais
+            DIREITO CONDOMINIAL
+          </h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-center  mt-4">
+            Expulsão de Condôminos Antissociais
           </h2>
           <p className="text-lg md:text-xl  mt-6 text-justify leading-relaxed">
-            O Escritório de advocacia JOSIMAR BEZERRA & ADVOGADOS ASSOCIADOS
-            atua com foco em direito condominial e gestão de conflitos com
-            condôminos antissociais.
+            O Escritório de advocacia JOSIMAR BEZERRA & ADVOGADOS atua com foco
+            em DIREITO CONDOMINIAL e gestão de conflitos com condôminos
+            antissociais.
           </p>
           <p className="text-lg md:text-xl  mt-4 text-justify leading-relaxed">
             Contamos com uma equipe altamente qualificada, com ampla experiência
@@ -39,15 +43,21 @@ function App() {
             harmonia e tranquilidade nas relações comunitárias, oferecendo um
             atendimento personalizado e ágil, com ética e excelência.
           </p>
-          <div className="mt-6">
-            <a href="#contato" className="btn btn-success btn-lg">
+          <div className="mt-6 flex justify-end">
+            <a
+              href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="botao-wpp btn btn-success btn-lg items-center gap-2"
+            >
               FALE COM ESPECIALISTA
+              <FaWhatsapp className="text-xl" />
             </a>
           </div>
         </div>
       </section>
 
-      <section id="about" className="flex flex-col md:flex-row bg-[#272219]">
+      <section id="about" className="flex flex-col md:flex-row bg-[#d4d3d3]">
         {/* Imagem */}
         <div className="w-full md:w-1/2 h-screen">
           <img
@@ -60,41 +70,52 @@ function App() {
         {/* Texto */}
         <div className="w-full md:w-1/2 px-8 md:px-12 flex items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl max-md:mt-7 font-bold text-black mb-6">
               O que é Direito Condominial?
             </h2>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-4">
+            <p className="text-lg md:text-xl text-black leading-relaxed mb-4">
               O Direito Condominial é a área jurídica que regulamenta as
               relações e resolve conflitos no âmbito dos condomínios. Ele
               estabelece regras para o uso adequado das propriedades e prevê
               penalidades em casos de descumprimento. Essas normas estão
               previstas no Código Civil e na legislação condominial específica.
             </p>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-4">
+            <p className="text-lg md:text-xl text-black leading-relaxed mb-4">
               Por isso, é obrigação dos condôminos cumprir tanto as disposições
               do Código Civil quanto as normas internas que regem a convivência
               em condomínios. O Direito Condominial define direitos e deveres,
               assegurando a ordem e a harmonia na coletividade condominial.
             </p>
-            <p className="text-lg md:text-xl text-white leading-relaxed">
+            <p className="text-lg md:text-xl text-black leading-relaxed">
               No nosso escritório, os advogados especializados em Direito
               Condominial estão capacitados para resolver conflitos com base na
               legislação vigente. Além disso, orientam e promovem ações
               específicas, como a expulsão de condôminos antissociais,
               garantindo que os direitos dos demais sejam preservados.
             </p>
+            <div className="mt-6 flex justify-end">
+              <a
+                href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
+              >
+                <span>FALE COM ESPECIALISTA</span>
+                <FaWhatsapp className="text-xl" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="actions" className="flex flex-col md:flex-row bg-[#272219]">
+      <section id="actions" className="flex flex-col md:flex-row bg-[#d4d3d3]">
         {/* Texto */}
         <div className="w-full md:w-1/2 px-8 md:px-12 flex items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl max-md:mt-7 font-bold text-black mb-6">
               O que fazer diante de um condômino antissocial no seu condomínio?
             </h2>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-6">
+            <p className="text-lg md:text-xl text-black leading-relaxed mb-6">
               A legislação, juntamente com a Convenção do Condomínio e o
               Regulamento Interno, prevê uma série de penalidades para lidar com
               condôminos que apresentem comportamentos antissociais. Essas
@@ -106,7 +127,7 @@ function App() {
             {/* Tópicos 1 e 2 */}
             <div className="flex flex-col md:flex-row md:gap-8 mb-1">
               <div className="flex-1">
-                <p className="text-base md:text-lg text-white leading-relaxed mb-4">
+                <p className="text-base md:text-lg text-black leading-relaxed mb-4">
                   <strong>1- Notificação extrajudicial:</strong>
                   <br />O condômino infrator deve ser notificado por escrito com
                   uma advertência clara sobre sua infração. É importante
@@ -116,7 +137,7 @@ function App() {
                 </p>
               </div>
               <div className="flex-1">
-                <p className="text-base md:text-lg text-white leading-relaxed mb-4">
+                <p className="text-base md:text-lg text-black leading-relaxed mb-4">
                   <strong>2- Aplicação de multa inicial:</strong>
                   <br />
                   Caso a advertência não surta efeito, o(a) síndico(a) poderá
@@ -132,7 +153,7 @@ function App() {
             {/* Tópicos 3 e 4 */}
             <div className="flex flex-col md:flex-row md:gap-8 mb-1">
               <div className="flex-1">
-                <p className="text-base md:text-lg text-white leading-relaxed mb-4">
+                <p className="text-base md:text-lg text-black leading-relaxed mb-4">
                   <strong>3- Assembleia para agravamento da multa:</strong>
                   <br />
                   Persistindo o comportamento inadequado, deve ser convocada uma
@@ -146,22 +167,23 @@ function App() {
                 </p>
               </div>
               <div className="flex-1">
-                <p className="text-base md:text-lg text-white leading-relaxed mb-4">
+                <p className="text-base md:text-lg text-black leading-relaxed mb-4">
                   <strong>
                     4- Nova assembleia para aplicação de penalidade máxima:
                   </strong>
                   <br />
-                  Em caso de reincidência, convoca-se outra assembleia geral
-                  extraordinária, onde os condôminos podem decidir pela
-                  aplicação de uma multa de até dez vezes o valor do condomínio,
-                  conforme o artigo 1.337 do Código Civil. Novamente, o infrator
-                  deverá ter a oportunidade de se defender, e a deliberação
-                  seguirá o quórum qualificado de 3/4 dos condôminos restantes.
+                  (trocar plano de fundo) Em caso de reincidência, convoca-se
+                  outra assembleia geral extraordinária, onde os condôminos
+                  podem decidir pela aplicação de uma multa de até dez vezes o
+                  valor do condomínio, conforme o artigo 1.337 parágrafo único
+                  do Código Civil. Novamente, o infrator deverá ter a
+                  oportunidade de se defender, e a deliberação seguirá o quórum
+                  qualificado de 3/4 dos condôminos restantes.
                 </p>
               </div>
             </div>
 
-            <p className="text-lg md:text-xl text-white leading-relaxed">
+            <p className="text-lg md:text-xl text-black leading-relaxed">
               Esse processo garante que as ações tomadas estejam em conformidade
               com a legislação e respeitem o direito de defesa, ao mesmo tempo
               em que protege o bem-estar coletivo no condomínio.
@@ -179,7 +201,7 @@ function App() {
         </div>
       </section>
 
-      <section id="identify" className="flex flex-col md:flex-row bg-[#272219]">
+      <section id="identify" className="flex flex-col md:flex-row bg-[#d4d3d3]">
         {/* Imagem */}
         <div className="w-full md:w-1/2 h-screen">
           <img
@@ -192,10 +214,10 @@ function App() {
         {/* Texto */}
         <div className="w-full md:w-1/2 px-8 md:px-12 flex items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl max-md:mt-7 font-bold text-black mb-6">
               Como identificar um condômino antissocial?
             </h2>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-6">
+            <p className="text-lg md:text-xl text-black leading-relaxed mb-6">
               Um condômino antissocial é aquele que, de forma reiterada,
               desrespeita normas, leis e comete atos graves, muitas vezes
               configurados como crimes. É importante destacar que não basta ser
@@ -204,10 +226,10 @@ function App() {
               condomínio, gerando reclamações, registros de ocorrência policial
               ou situações graves.
             </p>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-6">
+            <p className="text-lg md:text-xl text-black leading-relaxed mb-6">
               Alguns exemplos de comportamentos antissociais incluem:
             </p>
-            <ul className="list-disc text-lg md:text-xl text-white pl-6">
+            <ul className="list-disc text-lg md:text-xl text-black pl-6">
               <li className="mb-4">
                 <strong>Agressividade verbal ou física:</strong> Xingamentos,
                 assédio moral, agressões físicas, perseguição ou stalking contra
@@ -226,6 +248,10 @@ function App() {
                 <strong>Uso inadequado do imóvel:</strong> Realização de
                 atividades profissionais nocivas ou impróprias em unidades
                 residenciais.
+              </li>
+              <li>
+                calunica, injuria e difamação lesando a honra entre condominios
+                ou sindicos
               </li>
             </ul>
           </div>
@@ -234,39 +260,54 @@ function App() {
 
       <section
         id="important"
-        className="flex flex-col md:flex-row bg-[#272219]"
+        className="flex flex-col md:flex-row bg-[#d4d3d3]"
       >
         {/* Texto */}
         <div className="w-full md:w-1/2 px-8 md:px-12 flex items-center">
           <div>
-            <ul className="list-disc text-lg md:text-xl text-white pl-6">
+            <ul className="list-disc text-lg md:text-xl text-black pl-6">
               <li className="mb-4">
-                <strong>Agressividade verbal ou física:</strong> Xingamentos,
-                assédio moral, agressões físicas, perseguição ou stalking contra
-                síndico(a), moradores ou funcionários.
+                <strong>Uso de drogas ilícitas:</strong> Consumo em áreas comuns
+                do condomínio.
               </li>
               <li className="mb-4">
-                <strong>Desrespeito às regras de ruído:</strong> Persistência em
-                ultrapassar os limites de horário para barulhos, como festas ou
-                música alta, especialmente à noite.
+                <strong>Falta de higiene e segurança:</strong> Violação de
+                normas que comprometem a saúde ou a segurança dos demais
+                condôminos.
               </li>
               <li className="mb-4">
-                <strong>Atentados ao pudor:</strong> Atitudes como andar nu ou
-                seminu pelas áreas comuns do edifício.
+                <strong>Perturbação permanente:</strong>Ensaios de banda ou
+                ruídos intensos e frequentes, mesmo que fora de horários
+                restritivos.
               </li>
               <li>
-                <strong>Uso inadequado do imóvel:</strong> Realização de
-                atividades profissionais nocivas ou impróprias em unidades
-                residenciais.
+                <strong>Ofensas recorrentes:</strong> Calúnia, injúria e
+                difamação direcionadas ao síndico(a), funcionários ou vizinhos
+                de forma contínua.
+              </li>
+              <li>
+                <strong>Outras condutas criminosas:</strong> Qualquer
+                comportamento que infrinja a lei ou ameace o bem-estar coletivo.
               </li>
             </ul>
-            <p className="text-lg md:text-xl text-white leading-relaxed mt-6">
+            <p className="text-lg md:text-xl text-black leading-relaxed mt-6">
               Identificar esses comportamentos é o primeiro passo para tomar
               medidas cabíveis, sempre com base na legislação e no regimento
               interno do condomínio. É fundamental documentar os casos, reunir
               provas e agir de forma criteriosa para proteger a paz e a
               segurança da comunidade condominial.
             </p>
+            <div className="mt-6 flex justify-end max-md:mb-7">
+              <a
+                href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
+              >
+                <span>FALE COM ESPECIALISTA</span>
+                <FaWhatsapp className="text-xl" />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -289,7 +330,7 @@ function App() {
             Principais atuações da Assessoria Jurídica Condominial
           </h2>
           <p className="text-lg md:text-xl text-white leading-relaxed mb-6 text-justify">
-            O escritório JOSIMAR BEZERRA & ADVOGADOS ASSOCIADOS possui{" "}
+            O escritório JOSIMAR BEZERRA & ADVOGADOS possui
             <strong>advogados especialistas em Direito Condominial</strong>,
             atendendo a todas as necessidades de seus clientes de forma
             personalizada, com ética, excelência e agilidade. Nossa Assessoria
@@ -330,20 +371,32 @@ function App() {
               Elaboração de pareceres jurídicos para consolidação de assuntos
               polêmicos, tais como: sorteio de vagas de garagem, voto
               proporcional à fração ideal, responsabilidade do síndico,
-              prestação de contas, direito de voto, responsabilidade do Corpo
-              Direito e condôminos, vizinhança, animais no condomínio, dentre
-              outros assuntos.
+              prestação de contas, direito de voto, responsabilidade do conselho
+              e condôminos, vizinhança, animais no condomínio, dentre outros
+              assuntos.
             </li>
-            <li>
+            <li className="mb-4">
               Representação processual em todas as esferas judiciais,
               departamento especializado em elaboração de petições iniciais,
               defesas e recursos, inclusive para Tribunais Superiores.
             </li>
+            <li>Renegociação de debitos com a copasa</li>
           </ul>
+          <div className="mt-6 flex justify-end">
+            <a
+              href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
+            >
+              <span>FALE COM ESPECIALISTA</span>
+              <FaWhatsapp className="text-xl" />
+            </a>
+          </div>
         </div>
       </section>
 
-      <section id="contact" className="flex flex-col md:flex-row bg-[#272219]">
+      <section id="contact" className="flex flex-col md:flex-row bg-[#d4d3d3]">
         {/* Imagem */}
         <div className="w-full md:w-1/2 h-screen">
           <img
@@ -355,53 +408,45 @@ function App() {
 
         {/* Texto */}
         <div className="w-full md:w-1/2 px-8 md:px-12 flex flex-col justify-center items-start">
-          <div>
+          <div className="max-md:my-7">
             <img
               src={logo}
               alt="Logo Josimar Bezerra & Advogados"
               className="mx-auto mb-6 w-24 sm:w-32 md:w-40 lg:w-48 h-auto"
             />
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
               JOSIMAR BEZERRA & ADVOGADOS
             </h2>
-            <h3 className="text-2xl md:text-3xl text-white mb-4">
+            <h3 className="text-2xl md:text-3xl text-black mb-4">
               Entre em Contato
             </h3>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-4">
+            <p className="text-lg md:text-xl text-black leading-relaxed mb-4">
+              Avenida Raja Gabáglia n° 1.000, Conj. 1103 / 1104, Cidade Jardim,
+              Belo Horizonte/MG, CEP: 30.441-070.
+            </p>
+            <p className="text-lg md:text-xl text-black leading-relaxed mb-4">
               Rua das Canoas, 757, Betânia, Belo Horizonte/MG, CEP: 30.540-040.
             </p>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-4">
-              Avenida Raja Gabáglia n° 1.000, Conj. 805, Cidade Jardim, Belo
-              Horizonte/MG, CEP: 30.441-070.
+            <p className="text-lg md:text-xl text-black leading-relaxed mb-6">
+              De Segunda à Sexta-feira das 8h às 17h.
             </p>
-            <p className="text-lg md:text-xl text-white leading-relaxed mb-6">
-              De Segunda à Sexta-feira das 8h às 18h.
-            </p>
-            <p className="text-lg md:text-xl text-white leading-relaxed flex items-center mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-green-500 mr-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 10l1.39 3.47a2 2 0 001.79 1.26h.09a7 7 0 005.72 5.72v.1a2 2 0 001.25 1.78L14 21l2-8-8-2z"
-                />
-              </svg>
+            <p className="text-lg md:text-xl text-black leading-relaxed flex items-center mb-6">
               (31) 98762-8094
             </p>
-            <a
-              href="https://wa.me/5531987628094"
-              className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full flex items-center"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Fale com Especialista
-            </a>
+            <p className="text-lg md:text-xl text-black leading-relaxed flex items-center mb-6">
+              contato@josimarbezerraadvogados.com.br
+            </p>
+            <div className="mt-6 flex">
+              <a
+                href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
+              >
+                <span>FALE COM ESPECIALISTA</span>
+                <FaWhatsapp className="text-xl" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
