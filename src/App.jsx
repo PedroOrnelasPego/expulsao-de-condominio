@@ -12,6 +12,17 @@ import contactImg from "./assets/background/contact-img.png";
 import { FaWhatsapp } from "react-icons/fa";
 
 function App() {
+  // Função para disparar o evento do Google Analytics
+  const handleWhatsappClick = (section) => {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "click_whatsapp", {
+        event_category: "WhatsApp",
+        event_label: section,
+        value: 1,
+      });
+    }
+  };
+
   return (
     <div className="app">
       <Menubar />
@@ -25,18 +36,18 @@ function App() {
           <h1 className="text-4xl md:text-5xl text-center font-bold">
             JOSIMAR BEZERRA & ADVOGADOS
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-center  mt-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center mt-4">
             DIREITO CONDOMINIAL
           </h2>
-          <h2 className="text-2xl md:text-3xl font-semibold text-center  mt-4">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center mt-4">
             Expulsão de Condôminos Antissociais
           </h2>
-          <p className="text-lg md:text-xl  mt-6 text-justify leading-relaxed">
+          <p className="text-lg md:text-xl mt-6 text-justify leading-relaxed">
             O Escritório de advocacia JOSIMAR BEZERRA & ADVOGADOS atua com foco
             em DIREITO CONDOMINIAL e gestão de conflitos com condôminos
             antissociais.
           </p>
-          <p className="text-lg md:text-xl  mt-4 text-justify leading-relaxed">
+          <p className="text-lg md:text-xl mt-4 text-justify leading-relaxed">
             Contamos com uma equipe altamente qualificada, com ampla experiência
             em soluções jurídicas voltadas ao setor condominial. Nosso
             compromisso é auxiliar nossos clientes na busca pela tão desejada
@@ -49,6 +60,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
               className="botao-wpp btn btn-success btn-lg items-center gap-2"
+              onClick={() => handleWhatsappClick("Home Section")}
             >
               FALE COM ESPECIALISTA
               <FaWhatsapp className="text-xl" />
@@ -99,6 +111,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
+                onClick={() => handleWhatsappClick("About Section")}
               >
                 <span>FALE COM ESPECIALISTA</span>
                 <FaWhatsapp className="text-xl" />
@@ -250,18 +263,15 @@ function App() {
                 residenciais.
               </li>
               <li>
-                calunica, injuria e difamação lesando a honra entre condominios
-                ou sindicos
+                Calúnia, injúria e difamação lesando a honra entre condomínios
+                ou síndicos.
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section
-        id="important"
-        className="flex flex-col md:flex-row bg-[#d4d3d3]"
-      >
+      <section id="important" className="flex flex-col md:flex-row bg-[#d4d3d3]">
         {/* Texto */}
         <div className="w-full md:w-1/2 px-8 md:px-12 flex items-center">
           <div>
@@ -303,6 +313,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
+                onClick={() => handleWhatsappClick("Important Section")}
               >
                 <span>FALE COM ESPECIALISTA</span>
                 <FaWhatsapp className="text-xl" />
@@ -380,7 +391,7 @@ function App() {
               departamento especializado em elaboração de petições iniciais,
               defesas e recursos, inclusive para Tribunais Superiores.
             </li>
-            <li>Renegociação de debitos com a copasa</li>
+            <li>Renegociação de débitos com a Copasa</li>
           </ul>
           <div className="mt-6 flex justify-end">
             <a
@@ -388,6 +399,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
               className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
+              onClick={() => handleWhatsappClick("Centralized Section")}
             >
               <span>FALE COM ESPECIALISTA</span>
               <FaWhatsapp className="text-xl" />
@@ -442,6 +454,7 @@ function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
+                onClick={() => handleWhatsappClick("Contact Section")}
               >
                 <span>FALE COM ESPECIALISTA</span>
                 <FaWhatsapp className="text-xl" />
@@ -454,8 +467,7 @@ function App() {
       <footer className="bg-dark text-light py-4">
         <Container>
           <p className="text-center">
-            &copy; 2024 Josimar Bezerra & Advogados . Todos os direitos
-            reservados.
+            &copy; 2024 Josimar Bezerra & Advogados. Todos os direitos reservados.
           </p>
         </Container>
       </footer>
