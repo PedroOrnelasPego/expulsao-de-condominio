@@ -45,7 +45,7 @@ function App() {
           </p>
           <div className="mt-6 flex justify-end">
             <a
-              href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+              href="https://wa.me/5531987533343?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
               target="_blank"
               rel="noopener noreferrer"
               className="botao-wpp btn btn-success btn-lg items-center gap-2"
@@ -95,7 +95,7 @@ function App() {
             </p>
             <div className="mt-6 flex justify-end">
               <a
-                href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+                href="https://wa.me/5531987533343?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
@@ -299,7 +299,7 @@ function App() {
             </p>
             <div className="mt-6 flex justify-end max-md:mb-7">
               <a
-                href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+                href="https://wa.me/5531987533343?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
@@ -384,7 +384,7 @@ function App() {
           </ul>
           <div className="mt-6 flex justify-end">
             <a
-              href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+              href="https://wa.me/5531987533343?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
               target="_blank"
               rel="noopener noreferrer"
               className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
@@ -431,14 +431,14 @@ function App() {
               De Segunda à Sexta-feira das 8h às 17h.
             </p>
             <p className="text-lg md:text-xl text-black leading-relaxed flex items-center mb-6">
-              (31) 98762-8094
+              (31) 98753-3343
             </p>
             <p className="text-lg md:text-xl text-black leading-relaxed flex items-center mb-6">
               contato@josimarbezerraadvogados.com.br
             </p>
             <div className="mt-6 flex">
               <a
-                href="https://wa.me/5531987628094?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+                href="https://wa.me/55319875333434?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
