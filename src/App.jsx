@@ -438,7 +438,7 @@ function App() {
             </p>
             <div className="mt-6 flex">
               <a
-                href="https://wa.me/55319875333434?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
+                href="https://wa.me/5531987533343?text=Gostaria%20de%20saber%20mais%20sobre%20Expuls%C3%A3o%20de%20Cond%C3%B4minos%20Antissociais."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="botao-wpps flex btn btn-success btn-lg items-center gap-2"
